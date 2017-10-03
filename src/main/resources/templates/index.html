@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+<!--/*/ <th:block th:include="fragments/header :: head"></th:block> /*/-->
+
+</head>
+<body>
+  <div class="container">
+    <!--/*/ <th:block th:include="fragments/menu :: header"></th:block> /*/-->
+
+    <div class="jumbotron">
+      <div class="row text-center">
+        <div class="">
+          <h2></h2>
+          <h1>Test</h1>
+          <p>This is a test project.</p>
+          <p></p>
+          <pre
+            th:text="'Requested from: ' + ${#httpServletRequest.remoteHost} + ':' + ${#httpServletRequest.remotePort} + ' to ' + ${#httpServletRequest.localName} + ':' + ${#httpServletRequest.localPort} "> </pre>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
